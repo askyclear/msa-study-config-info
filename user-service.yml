@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    hikari:
+      driver-class-name: org.h2.Driver
+      jdbc-url: jdbc:h2:mem:testdb
+      username: '{cipher}a680ddfcf87becac8935f60863bbf952b3ca81d550f5c228c65fdd5aa538644d'
+      password: '{cipher}982125fe4542be079f8565bd8adac7683ed0d2346bbb52e113f1e073795e616d'
+
+token:
+  expiration_time: 86400000
+  secret: user_token_default
+gateway:
+  ip: 192.168.219.102
