@@ -13,4 +13,6 @@ gateway:
   ip: 192.168.219.102
 
 order_service:
-  url: http://ORDER-SERVICE/order/{userId}/orders
+  url: http://ORDER-SERVICE/{userId}/orders
+  exception:
+    orders_is_empty: User's orders is empty.
