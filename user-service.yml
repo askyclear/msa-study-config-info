@@ -11,3 +11,6 @@ token:
   secret: user_token_default
 gateway:
   ip: 192.168.219.102
+
+order_service:
+  url: http://127.0.0.1:8000/order/{userId}/orders
