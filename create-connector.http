@@ -1,0 +1,34 @@
+GET http://localhost:8083/connectors
+Accept: application/json
+
+###
+POST http://localhost:8083/connectors
+Content-Type: application/json
+
+{
+
+  "name":"orders",
+
+  "config":{
+
+    "connector.class":"io.confluent.connect.jdbc.JdbcSinkConnector",
+
+    "connection.url":"jdbc:mariadb://localhost:3306/mydb",
+
+    "connection.user": dbuser,
+
+    "connection.password":password,
+
+    "auto.create":"true",
+
+    "auto.evolve":"true",
+
+    "delete.enabled":"false",
+
+    "tasks.max":"1",
+
+    "topics":"orders"
+
+  }
+
+}
