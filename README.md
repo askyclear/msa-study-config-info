@@ -33,6 +33,25 @@ cd sampleDb
 docker build -t askyclear/my_mariadb:1.0 .
 
 docker run -d -p 3306:3306 --network ecommerce-network  --name mariadb askyclear/my_mariadb:1.0
+## zookeeper/ kafka
+https://github.com/wurstmeister/kafka-docker 참고
+
+
+## zipkin
+docker run -d -p 9411:9411 \
+--network ecommerce-network \
+--name zipkin \
+openzipkin/zipkin
+
+## prometheus
+docker run -d -p 9090:9090 --network ecommerce-network \
+--name prometheus \
+-v /Users/user/IdeaProjects/msa-study-config-info/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml \
+prom/prometheus
+
+
+## grafana
+docker run -d -p 3000:3000 --network ecommerce-network --name grafana grafana/grafana
 
 
 
