@@ -2,7 +2,7 @@ spring:
   datasource:
     hikari:
       driver-class-name: org.mariadb.jdbc.Driver
-      jdbc-url: jdbc:mariadb://localhost:3306/mydb
+#      jdbc-url: jdbc:mariadb://localhost:3306/mydb
       username: '{cipher}625beab0ee0bb8ab8fd65b9b5c790e0a375b007c651b5bdaa2f7547f7491744c'
       password: '{cipher}285bd1d3c0d2303f54d5111458d53a96578bfe5f261b49670ef965b993a0311e'
 gateway:
