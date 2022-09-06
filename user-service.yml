@@ -10,7 +10,8 @@ token:
   expiration_time: 86400000
   secret: user_token_default
 gateway:
-  ip: 192.168.219.102
+  ip: 172.18.0.5
+#192.168.219.0/24
 
 order_service:
   url: http://ORDER-SERVICE/{userId}/orders
