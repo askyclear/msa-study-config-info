@@ -1,10 +1,10 @@
 kafka:
-  bootstrap-url: 127.0.0.1:9092
+  bootstrap-url: 172.18.0.101:9092
   catalog-topic: example-catalog-topic
   orders: orders
 spring:
   zipkin:
-    base-url: http://127.0.0.1:9411
+#    base-url: http://127.0.0.1:9411
     enabled: true
   sleuth:
     sampler:
