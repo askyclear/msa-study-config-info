@@ -1,10 +1,10 @@
 spring:
   datasource:
     hikari:
-      driver-class-name: org.h2.Driver
-      jdbc-url: jdbc:h2:mem:testdb
-      username: '{cipher}a680ddfcf87becac8935f60863bbf952b3ca81d550f5c228c65fdd5aa538644d'
-      password: '{cipher}982125fe4542be079f8565bd8adac7683ed0d2346bbb52e113f1e073795e616d'
+      driver-class-name: org.mariadb.jdbc.Driver
+      #      jdbc-url: jdbc:mariadb://localhost:3306/mydb
+      username: '{cipher}625beab0ee0bb8ab8fd65b9b5c790e0a375b007c651b5bdaa2f7547f7491744c'
+      password: '{cipher}285bd1d3c0d2303f54d5111458d53a96578bfe5f261b49670ef965b993a0311e'
 
 token:
   expiration_time: 86400000
